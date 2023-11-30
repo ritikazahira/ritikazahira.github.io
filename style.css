@@ -85,3 +85,42 @@ style.css
   font-size: 1.2em;
   color: #666;
 }
+/* ... rest of your CSS ... */
+
+/* Style the sidebar navigation */
+.sidebar {
+  height: 100%; /* Full-height */
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* Style the navigation links inside the sidebar */
+.sidebar a {
+  padding: 6px 8px 6px 16px; /* Some padding */
+  text-decoration: none; /* Remove underlines */
+  font-size: 25px; /* Increase font size */
+  color: #818181; /* Grey color */
+  display: block; /* Make the links appear below each other */
+  transition: 0.3s; /* Add transition for hover effect */
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1; /* White color on hover */
+}
+
+/* Style the content */
+.content {
+  margin-left: 250px; /* Same as the width of the sidebar */
+  padding: 1px 16px;
+  height: 1000px; /* Sample height */
+}
+
+/* ... rest of your CSS ... */
+
