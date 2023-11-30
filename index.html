@@ -5,54 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Concepts</title>
 <style>
-  body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
+  /* Existing CSS */
+  /* ... */
+  
+  /* Add new styles for the navigation buttons here */
   .navbar {
-    background-color: #333;
-    color: white;
+    /* ... existing styles ... */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
-    text-align: center;
   }
-  .navbar img {
-    width: 50px;
-    height: auto;
+
+  .nav-buttons {
+    /* Container for buttons to align them in a row */
+    display: flex;
   }
-  .header {
+
+  .nav-button {
     background-color: #555;
     color: white;
-    text-align: center;
-    padding: 40px 20px;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px; /* Space between buttons */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Color transition for hover effect */
   }
-  .main {
-    width: 80%;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-around;
+
+  .nav-button:hover {
+    background-color: #777; /* Color for hover effect */
   }
-  .card {
-    background-color: #fff;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
-  .card img {
-    max-width: 100%;
-    height: auto;
-  }
+  /* ... */
 </style>
 </head>
 <body>
+
 <div class="navbar">
-  <!-- Navigation content here -->
+  <!-- Site logo or name could go here -->
+  <div class="nav-buttons">
+    <button class="nav-button">Home</button>
+    <button class="nav-button">About</button>
+    <button class="nav-button">Courses</button>
+    <button class="nav-button">Contact</button>
+  </div>
 </div>
 
 <div class="header">
-  <h1>ritika.ai</h1>
-  <p> my math to understanding and learning ai</p>
+  <h1>aman.ai</h1>
+  <p>my path to learning and understanding artificial intellegence</p>
 </div>
 
 <div class="main">
@@ -64,6 +64,22 @@
   <!-- Repeat for other cards -->
 </div>
 
+<script>
+// JavaScript for interactive elements
+document.addEventListener('DOMContentLoaded', function() {
+  // Example: Add event listeners to the buttons
+  var navButtons = document.querySelectorAll('.nav-button');
+  
+  navButtons.forEach(function(button) {
+    button.addEventListener('click', function(event) {
+      // Placeholder functionality - replace with your own
+      console.log('Navigating to:', event.target.textContent);
+    });
+  });
+});
+</script>
+
 </body>
 </html>
+
 
