@@ -4,82 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Concepts</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  /* Existing CSS */
-  /* ... */
-  
-  /* Add new styles for the navigation buttons here */
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
   .navbar {
-    /* ... existing styles ... */
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
   }
-
-  .nav-buttons {
-    /* Container for buttons to align them in a row */
-    display: flex;
-  }
-
-  .nav-button {
-    background-color: #555;
+  .navbar button {
+    background: none;
+    border: 2px solid white;
+    padding: 10px 15px;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-left: 10px; /* Space between buttons */
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+  .navbar button:hover {
+    background: white;
+    color: #1a1a1a;
     cursor: pointer;
-    transition: background-color 0.3s; /* Color transition for hover effect */
   }
-
-  .nav-button:hover {
-    background-color: #777; /* Color for hover effect */
+  .header {
+    text-align: center;
+    padding: 50px 20px;
   }
-  /* ... */
+  .header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  .header p {
+    font-size: 1.5em;
+    color: #666;
+  }
+  .content {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .content h2 {
+    font-size: 2em;
+    margin-bottom: 0.25em;
+  }
+  .content p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  /* Add responsive design */
+  @media (max-width: 768px) {
+    .navbar button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
 </style>
 </head>
 <body>
-
 <div class="navbar">
-  <!-- Site logo or name could go here -->
-  <div class="nav-buttons">
-    <button class="nav-button">Home</button>
-    <button class="nav-button">About</button>
-    <button class="nav-button">Courses</button>
-    <button class="nav-button">Contact</button>
-  </div>
+  <button>Home</button>
+  <button>About</button>
+  <button>Courses</button>
+  <button>Contact</button>
 </div>
 
 <div class="header">
-  <h1>ritika.ai</h1>
-  <p>my path to learning and understanding artificial intellegence</p>
+  <h1>aman.ai</h1>
+  <p>my path to learning and understanding artificial intelligence</p>
 </div>
 
-<div class="main">
-  <div class="card">
-    <img src="path_to_your_image" alt="Machine Learning">
-    <h3>Stanford CS229</h3>
-    <p>Machine Learning</p>
-  </div>
-  <!-- Repeat for other cards -->
+<div class="content">
+  <h2>Stanford CS229</h2>
+  <p>Machine Learning</p>
+  <!-- Placeholder for future content -->
 </div>
 
-<script>
-// JavaScript for interactive elements
-document.addEventListener('DOMContentLoaded', function() {
-  // Example: Add event listeners to the buttons
-  var navButtons = document.querySelectorAll('.nav-button');
-  
-  navButtons.forEach(function(button) {
-    button.addEventListener('click', function(event) {
-      // Placeholder functionality - replace with your own
-      console.log('Navigating to:', event.target.textContent);
-    });
-  });
-});
-</script>
+<!-- Additional content goes here -->
 
 </body>
+</html>
+
 </html>
 
 
