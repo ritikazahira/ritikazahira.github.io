@@ -1,45 +1,87 @@
 style.css
-    justify-content: center;
-    background: #444;
-    padding: 10px 0;
+    body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
-nav a {
-    color: rgb(238, 192, 66);
-    text-decoration: none;
-    padding: 10px 20px;
+
+.navbar {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center; /* Center the buttons */
 }
-nav a:hover {
-    background: #e4cbff;
+
+.navbar button {
+  background: none;
+  border: 2px solid white;
+  padding: 10px 15px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 10px; /* Space between buttons */
+  transition: all 0.3s ease;
 }
-section {
-    padding: 20px;
-    margin: 20px 0;
+
+.navbar button:hover {
+  background: white;
+  color: #1a1a1a;
 }
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #333;
-    color: white;
-}style.css
-    justify-content: center;
-    background: #444;
-    padding: 10px 0;
+
+.header {
+  text-align: center;
+  padding: 50px 20px;
 }
-nav a {
-    color: rgb(238, 192, 66);
-    text-decoration: none;
-    padding: 10px 20px;
+
+.header h1 {
+  font-size: 4em; /* Larger font size */
+  margin-bottom: 0.5em;
+  font-weight: 700; /* Bolder font for the site title */
 }
-nav a:hover {
-    background: #e4cbff;
+
+.header p {
+  font-size: 1.5em;
+  color: #666;
 }
-section {
-    padding: 20px;
-    margin: 20px 0;
+
+.search-container {
+  text-align: center;
+  margin: 20px 0;
 }
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #333;
-    color: white;
+
+.search-box {
+  padding: 10px;
+  width: 50%; /* Or any width that suits your design */
+  margin-right: -1px; /* Aligns the search box with the button */
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
+}
+
+.search-button {
+  padding: 11px 20px; /* Adjust padding to align with search box height */
+  border: none;
+  border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
+  cursor: pointer;
+  background-color: #333; /* Match with the navbar color */
+  color: white;
+  border-left: 1px solid #ccc;
+}
+
+.content {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 2em;
+  margin-bottom: 0.25em;
+}
+
+.content p {
+  font-size: 1.2em;
+  color: #666;
 }
