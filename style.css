@@ -1,53 +1,89 @@
-body {
-    font-family: 'Roboto', sans-serif;
+/* Reset some default styling */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-header {
-    padding: 20px;
-    background-color: #eee;
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 
-nav {
-    background-color: #ddd;
-    padding: 20px;
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.brand-title {
+    font-size: 1.5em;
+    margin-left: 1em;
 }
 
-nav ul li {
+.navbar-links ul {
+    list-style: none;
+}
+
+.navbar-links li {
     display: inline;
-    margin-right: 20px;
+    padding: 0 20px;
 }
 
-nav ul li a {
+.navbar-links a {
     text-decoration: none;
-    color: #333;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid black;
-    font-weight: bold;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
-    background-color: #f8f8f8;
+.navbar-links a:hover {
+    color: #orange;
 }
 
+/* Hero image styling */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Main content styling */
+.info-section {
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Footer styling */
 footer {
-    background-color: #eee;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.8em;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .navbar-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links li {
+        padding: 10px;
+    }
+
+    .hero {
+        height: 200px;
+        padding: 30px 20px;
+    }
 }
 
 
