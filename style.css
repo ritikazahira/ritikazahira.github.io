@@ -1,76 +1,73 @@
+/* Importing Google Fonts for the body and heading */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body, html {
+  width: 100%;
   height: 100%;
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f4f4f4; /* Light grey background */
-  color: #333; /* Dark grey text */
+  font-family: 'Roboto', sans-serif;
 }
 
-/* Style the header/navbar */
-.header {
+header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  background-color: #fff; /* White background for the navbar */
-}
-
-/* Logo on the left side */
-.logo {
-  font-size: 24px;
-  font-weight: 700; /* Bold text for the logo */
-  color: #000; /* Black color text */
-}
-
-/* Navigation links */
-nav a.contact, .menu {
-  text-decoration: none;
-  color: #000; /* Black color text */
-  font-weight: 400; /* Regular weight for text */
-  margin-left: 20px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-/* Main content style */
-.main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 80%;
+  padding: 20px 10%;
+  background: #FFF; /* Change to your preferred color */
+  color: #000;
+  position: fixed;
+  width: 80%;
+  top: 0;
 }
 
-/* Mission statement at the bottom */
-.mission-statement {
+#logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav {
+  font-size: 18px;
+}
+
+nav a#contact-link, #menu-icon {
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+#menu-icon {
+  display: none; /* Hidden by default, shown in JavaScript on click */
+}
+
+#mission-statement {
   position: absolute;
-  bottom: 10%;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  color: #000; /* Black color text */
+  width: 100%;
 }
 
-/* Style for the mission statement text */
-.mission-statement p {
-  font-size: 1.8em;
-  font-weight: 300; /* Lighter font weight */
-  margin: 0;
+#mission-statement p {
+  font-size: 40px; /* Large, bold text */
+  font-weight: 700;
+  color: #000;
 }
 
-/* Responsiveness */
-@media (max-width: 600px) {
-  .mission-statement p {
-    font-size: 1.2em;
-  }
-  
-  .header {
+/* Responsive Design for smaller devices */
+@media (max-width: 768px) {
+  header {
     flex-direction: column;
   }
 
-  .logo {
-    margin-bottom: 10px;
+  #menu-icon {
+    display: initial;
   }
 }
 
