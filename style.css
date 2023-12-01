@@ -48,6 +48,27 @@ section h1, section h2 {
     height: auto;
     margin: 20px 0;
 }
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Applying the animation to your image and title */
+.header-image, .header-title {
+    animation-name: fadeIn;
+    animation-duration: 1s; /* This controls how long the animation takes */
+    animation-fill-mode: both; /* Keeps the end state after the animation completes */
+}
+
+/* Adding a slight delay to the animation */
+.header-image {
+    animation-delay: 0.3s; /* Image appears after 300 milliseconds */
+}
+
+.header-title {
+    animation-delay: 0.6s; /* Title appears after 600 milliseconds */
+}
 
 /* Additional styling as needed */
 
