@@ -1,12 +1,9 @@
-style.css
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    /* Add padding to make space for the sidebar */
-    padding-right: 250px; /* Adjust based on the sidebar width */
 }
 
 /* Sidebar styles */
@@ -40,7 +37,8 @@ body {
 
 /* Style the content */
 .content {
-    margin-right: 250px; /* Same as sidebar width */
+    margin-left: 20px; /* Left margin for content */
+    margin-right: 270px; /* Right margin to make space for the sidebar */
     padding: 1px 16px;
     height: auto; /* Adjust as needed */
 }
@@ -48,12 +46,15 @@ body {
 /* Header styles */
 .header {
     text-align: center;
-    padding: 50px 20px;
+    padding-top: 20px; /* Reduced top padding */
+    padding-bottom: 20px; /* Adjusted bottom padding */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header h1 {
     font-size: 4em; /* Larger font size */
-    margin-bottom: 0.5em;
+    margin-bottom: 0; /* Reduced bottom margin */
     font-weight: 700; /* Bolder font for the site title */
 }
 
@@ -62,80 +63,30 @@ body {
     color: #666;
 }
 
-.search-container {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.search-box {
-  padding: 10px;
-  width: 50%; /* Or any width that suits your design */
-  margin-right: -1px; /* Aligns the search box with the button */
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px; /* Rounded corners on the left side */
-}
-
-.search-button {
-  padding: 11px 20px; /* Adjust padding to align with search box height */
-  border: none;
-  border-radius: 0 5px 5px 0; /* Rounded corners on the right side */
-  cursor: pointer;
-  background-color: #333; /* Match with the navbar color */
-  color: white;
-  border-left: 1px solid #ccc;
-}
-
-.content {
-  width: 80%;
-  margin: 20px auto;
-  text-align: center;
-}
-
+/* Content headings */
 .content h2 {
-  font-size: 2em;
-  margin-bottom: 0.25em;
+    font-size: 2em;
+    margin-top: 0; /* Reduced top margin */
+    margin-bottom: 0.25em; /* Adjusted bottom margin */
 }
 
 .content p {
-  font-size: 1.2em;
-  color: #666;
-}
-/* ... rest of your CSS ... */
-
-/* Style the sidebar navigation */
-.sidebar {
-  height: 100%; /* Full-height */
-  width: 250px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+    font-size: 1.2em;
+    color: #666;
 }
 
-/* Style the navigation links inside the sidebar */
-.sidebar a {
-  padding: 6px 8px 6px 16px; /* Some padding */
-  text-decoration: none; /* Remove underlines */
-  font-size: 25px; /* Increase font size */
-  color: #818181; /* Grey color */
-  display: block; /* Make the links appear below each other */
-  transition: 0.3s; /* Add transition for hover effect */
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100px; /* Smaller sidebar for mobile */
+    }
+    .content {
+        margin-right: 120px; /* Adjusted right margin for mobile */
+        margin-left: 10px; /* Adjusted left margin for mobile */
+    }
+    .sidebar a {
+        font-size: 18px; /* Smaller font size for mobile */
+    }
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1; /* White color on hover */
-}
-
-/* Style the content */
-.content {
-  margin-left: 250px; /* Same as the width of the sidebar */
-  padding: 1px 16px;
-  height: 1000px; /* Sample height */
-}
-
-/* ... rest of your CSS ... */
 
