@@ -75,6 +75,16 @@ body {
     color: #666;
 }
 
+.image-container {
+  text-align: center; /* This will center the image inside the container */
+}
+
+.image-container img {
+  margin-top: 20px; /* This adds some space between the tagline and the image */
+  max-width: 100%; /* This ensures the image is responsive and does not overflow the screen */
+  height: auto; /* This maintains the aspect ratio of the image */
+}
+
 /* Responsive design adjustments */
 @media (max-width: 768px) {
     .sidebar {
