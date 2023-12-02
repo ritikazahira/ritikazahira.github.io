@@ -14,11 +14,19 @@
 }
 
 .centered-title {
-    position: relative;
-    top: 50vh; 
-    transform: translateY(-50%); 
-    opacity: 0; 
-    animation: fadeIn 1s ease-out 2s forwards; 
+    /* ... existing styles ... */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Make sure the z-index is lower than the text sections if they need to scroll over the title */
+    z-index: 1;
+}
+
+.text-section {
+    /* Add top padding to ensure it starts below the centered title */
+    padding-top: 100vh; /* Adjust this value as needed */
+    /* ... existing styles ... */
 }
 
 @keyframes fadeIn {
