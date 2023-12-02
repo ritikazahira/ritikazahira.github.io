@@ -3,7 +3,7 @@
     padding: 0;
     height: 100%;
     scroll-behavior: smooth;
-    background: url('path-to-your-image.jpg') no-repeat center center fixed;
+    background: url('/images/vsco_060422.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Open Sans', sans-serif; 
 }
