@@ -1,33 +1,29 @@
- body, html {
+body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     scroll-behavior: smooth;
     background: url('/images/vsco_060422.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
 }
 
 .main-container {
-    text-align: center; 
+    text-align: center;
     padding-top: 60px; 
-}
 
 .centered-title h1 {
-    /* Initial properties for animation */
-    opacity: 0;
-    visibility: hidden;
-    /* Positioning */
-    position: absolute;
+    position: fixed; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Styling */
-    font-size: 4em; /* or any other size you prefer */
+    z-index: 10; 
+    opacity: 0;
+    visibility: hidden;
+    font-size: 4em;
     color: white;
-    font-family: 'Roboto', sans-serif; /* Roboto or any other aesthetic font */
-    /* Animation */
-    animation: fadeInAndShow 1s ease-out 2s forwards;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeInAndShow 1s ease-out 2s forwards; 
 }
 
 @keyframes fadeInAndShow {
@@ -41,29 +37,18 @@
     }
 }
 
-.text-section {
-    /* Padding to ensure it starts below the centered title */
-    padding-top: 100vh; /* or more if needed */
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for text readability */
-    /* Rest of your styles */
-}
-
-h1 {
-    font-family: 'Roboto', sans-serif; 
-    color: white;
-    font-weight: 100;
-    font-size: 4em; 
-}
 
 .text-section {
     background-color: rgba(255, 255, 255, 0.8); 
     margin: 20px auto;
+    margin-top: 50vh; 
     max-width: 800px; 
     padding: 40px;
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
 }
+
 
 
 
