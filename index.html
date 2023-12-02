@@ -1,9 +1,64 @@
-<!DOCTYPE html>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+    background: url('path-to-your-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black for nav */
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-container {
+    padding-top: 60px; /* Offset for the fixed navbar */
+}
+
+.text-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for text readability */
+    margin: 20px auto;
+    max-width: 800px; /* Or whatever maximum width you prefer */
+    padding: 40px;
+    border-radius: 8px; /* Optional for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for subtle shadow */
+    box-sizing: border-box;
+}
+
+/* Add additional styling as necessary */
+
+sakshi:
+	<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ritika.ai</title>
+    <title>Ritika.ai</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,26 +70,24 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-<section id="home" class="header-container">
-    <img src="images/vsco_060422.jpg" alt="Moon Night" class="header-image">
-    <h1 class="header-title">ritika.ai</h1>
-</section>
-
-<section id="about">
-    <h2>About</h2>
-    <p>Hi my name is Ritika, I am a computer science, math, and economics major. I am really interested in learning AI, and I love creating things and solving problems. I created this website to document my journey learning AI and showcase different projects that I complete. I also created this website to upload any notes, books, lecutres, and other course work that I found useful for learning AI. </p>
-</section>
-<section id="work">
-    <h2>Projects and Lecture Notes</h2>
-    <p>I will add the content for the courses, projects, books, and notes once I finisht creating the website to look visually how I want.</p>
-        <!-- Content for my courses, projects, books, and notes will go here -->
-</section>
-<section id="contact">
-<h2>Contact Me</h2>
-<p>You can contact me at rmishra1@tulane.edu. </p>
-<p>Thank you for visiting my website! Hope you enjoyed. This was written by Ritika on December 1st, 2023 using javascript, css, and html.</p>
-</section>
-<script src="script.js"></script>
+    <div class="main-container">
+        <section id="home">
+            <h1>Ritika.ai</h1>
+        </section>
+        <section id="about" class="text-section">
+            <h2>About</h2>
+            <p>Hi, my name is Ritika... [rest of your introduction]</p>
+        </section>
+        <section id="work" class="text-section">
+            <h2>Work</h2>
+            <!-- Content for your courses, projects, books, and notes will go here -->
+        </section>
+        <section id="contact" class="text-section">
+            <h2>Contact Me</h2>
+            <p>You can contact me through filling out this form... [additional contact info]</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
 
