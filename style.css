@@ -13,26 +13,39 @@
     padding-top: 60px; 
 }
 
-.centered-title {
-    /* ... existing styles ... */
+.centered-title h1 {
+    /* Initial properties for animation */
+    opacity: 0;
+    visibility: hidden;
+    /* Positioning */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Make sure the z-index is lower than the text sections if they need to scroll over the title */
-    z-index: 1;
+    /* Styling */
+    font-size: 4em; /* or any other size you prefer */
+    color: white;
+    font-family: 'Roboto', sans-serif; /* Roboto or any other aesthetic font */
+    /* Animation */
+    animation: fadeInAndShow 1s ease-out 2s forwards;
+}
+
+@keyframes fadeInAndShow {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .text-section {
-    /* Add top padding to ensure it starts below the centered title */
-    padding-top: 100vh; /* Adjust this value as needed */
-    /* ... existing styles ... */
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1; 
-    }
+    /* Padding to ensure it starts below the centered title */
+    padding-top: 100vh; /* or more if needed */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for text readability */
+    /* Rest of your styles */
 }
 
 h1 {
