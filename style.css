@@ -1,56 +1,49 @@
-body, html {
+ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     scroll-behavior: smooth;
-    background: url('images/vsco_060422.jpg') no-repeat center center fixed;
+    background: url('path-to-your-image.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: Arial, sans-serif;
-}
-
-nav {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black for nav */
-    color: white;
-    height: 50px;
-    line-height: 50px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
+    font-family: 'Open Sans', sans-serif; 
 }
 
 .main-container {
-    padding-top: 60px; /* Offset for the fixed navbar */
+    text-align: center; 
+    padding-top: 60px; 
+}
+
+.centered-title {
+    position: relative;
+    top: 50vh; 
+    transform: translateY(-50%); 
+    opacity: 0; 
+    animation: fadeIn 1s ease-out 2s forwards; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif; 
+    color: white;
+    font-weight: 100;
+    font-size: 4em; 
 }
 
 .text-section {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for text readability */
+    background-color: rgba(255, 255, 255, 0.8); 
     margin: 20px auto;
-    max-width: 800px; /* Or whatever maximum width you prefer */
+    max-width: 800px; 
     padding: 40px;
-    border-radius: 8px; /* Optional for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for subtle shadow */
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     box-sizing: border-box;
 }
 
-/* Add additional styling as necessary */
 
 
 
