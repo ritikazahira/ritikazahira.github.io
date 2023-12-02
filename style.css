@@ -11,7 +11,7 @@ body, html {
 .main-container {
     text-align: center;
     padding-top: 60px; 
-
+}
 .centered-title h1 {
     position: fixed; 
     top: 50%;
